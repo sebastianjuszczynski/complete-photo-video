@@ -1,11 +1,9 @@
+import Showcase from "./components/Showcase";
 
-import './App.css';
 
 function App() {
   return (
-    <div>
-      nanan
-    </div>
+    <Showcase />
   );
 }
 

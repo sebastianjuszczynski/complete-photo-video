@@ -1,11 +1,12 @@
 import React from 'react'
 import Navigation from '../Navigation';
-import { NavigationContainer, Logo} from "./styled";
+import { NavigationContainer, Logo } from "./styled";
+import LogoImg from "../../assets/logo.png"
 
 const NavBar = () => {
     return (
         <NavigationContainer>
-            <Logo>Complete photo video</Logo>
+            <Logo src={LogoImg}></Logo>
             <Navigation />
         </NavigationContainer>
     )

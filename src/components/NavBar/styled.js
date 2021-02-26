@@ -13,6 +13,7 @@ export const NavigationContainer = styled.div`
     text-transform: uppercase;
     z-index: 1;
 `;
-export const Logo = styled.h2`
+export const Logo = styled.img`
     margin-left: 100px;
+    height: 40px;
 `;

@@ -1,4 +1,18 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
+
+const bounce = keyframes` {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}`;
+  
 
 export const Video = styled.video`
     position: absolute;
@@ -30,4 +44,15 @@ export const TextBig = styled.h2`
 `;
 export const TextSmall = styled.h3`
    font-size: 2em; 
+`;
+export const ArrowDown = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    animation: ${bounce} 2s infinite;
+    overflow: hidden;
+`;
+export const Arrow = styled.a`
+    color: white;
+    font-size: 3em;
 `;

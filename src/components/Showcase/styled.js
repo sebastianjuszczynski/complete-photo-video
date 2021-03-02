@@ -56,3 +56,6 @@ export const Arrow = styled.a`
     color: white;
     font-size: 3em;
 `;
+export const Container = styled.div`
+    height: 100vh;
+`;

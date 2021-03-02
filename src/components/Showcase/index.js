@@ -1,13 +1,13 @@
 import React from 'react';
 import video from "../../assets/beta.mp4";
 import NavBar from '../NavBar';
-import { Overlay, Video, Text, TextBig, TextSmall, ArrowDown, Arrow } from './styled';
+import { Overlay, Video, Text, TextBig, TextSmall, ArrowDown, Arrow, Container } from './styled';
 import Typewriter from 'typewriter-effect';
 const Showcase = () => {
 
 
     return (
-        <>
+        <Container>
             <NavBar />
             <Video src={video} autoPlay muted loop />
             <Overlay />
@@ -48,7 +48,7 @@ const Showcase = () => {
                 <Arrow href="#"><i class="fas fa-chevron-down"></i></Arrow>
             </ArrowDown>
 
-        </>
+        </Container>
     )
 }
 

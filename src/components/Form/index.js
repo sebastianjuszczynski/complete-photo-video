@@ -66,12 +66,16 @@ const Form = () => {
     }
   }
 
-  const { values, errors, dirty, handleOnChange} = useForm(stateSchema, stateValidatorSchema);
+  const { values, errors, dirty, handleOnChange, setValues} = useForm(stateSchema, stateValidatorSchema);
   const { firstname, lastname, email } = values;
   
 const onFormSubmit = (e) => {
       e.preventDefault();
-      firstname = ""
+      setValues({
+        firstname: "",
+        lastname: "",
+        email: ""
+      })
   }
 
   const classes = useStyles();

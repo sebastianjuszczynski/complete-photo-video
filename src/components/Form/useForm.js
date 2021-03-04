@@ -146,6 +146,7 @@ function useForm(
     handleOnChange,
     handleOnSubmit,
     validateErrorState,
+    setValues
   };
 }
 

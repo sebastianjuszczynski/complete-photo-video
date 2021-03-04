@@ -1,6 +1,6 @@
 export const VALUE = 'value';
 export const ERROR = 'error';
-export const REQUIRED_FIELD_ERROR = "Field can't be empty";
+export const REQUIRED_FIELD_ERROR = "Pole nie może być puste!";
 
 function is_bool(value) {
   return typeof value === 'boolean';

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TextContainer = styled.div`
     position: relative;
-    top: 100px;
+    top: 40px;
     left: 48%;
     color: white;
 `;

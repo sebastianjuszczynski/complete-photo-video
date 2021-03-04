@@ -1,4 +1,5 @@
 
+import MasonryGrid from "./components/MasonryGrid";
 import Motto from "./components/Motto";
 import Showcase from "./components/Showcase";
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <Showcase />
     <Motto />
+    <MasonryGrid />
     </>
   );
 }

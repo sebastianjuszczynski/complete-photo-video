@@ -1,5 +1,6 @@
 
 import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
 import Form from "./components/Form";
 import MasonryGrid from "./components/MasonryGrid";
 import Motto from "./components/Motto";
@@ -16,6 +17,7 @@ function App() {
     <AboutMe />
     <ParallaxSection />
     <Form />
+    <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TextContainer = styled.div`
     position: relative;
     top: 100px;
-    left: 50%;
+    left: 48%;
     color: white;
 `;
 
@@ -12,9 +12,10 @@ export const TextH3 = styled.h3`
 `;
 
 export const TextParagraph = styled.p`
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 200;
     line-height: 1.5;
 `;
 export const ParallaxContainer = styled.div`
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 `;

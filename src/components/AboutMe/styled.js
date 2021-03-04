@@ -5,11 +5,11 @@ export const AboutMeContainer = styled.div`
     text-align: center;
 `;
 export const AboutMeH2 = styled.h2`
-    font-size: 32px;
+    font-size: 36px;
     text-transform: uppercase;
 `;
 export const AboutMeDescription = styled.p`
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
     line-height: 1.5;
 `;

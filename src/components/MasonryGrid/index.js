@@ -32,7 +32,7 @@ const MasonryGrid = () => {
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1100: 4 }}
             >
                 <Masonry
-                    gutter="10px">
+                    gutter="15px">
                     {images.map((image, i) => (
                         <img
                             key={i}

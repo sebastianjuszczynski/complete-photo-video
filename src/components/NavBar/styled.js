@@ -4,7 +4,7 @@ export const NavigationContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,6 +12,7 @@ export const NavigationContainer = styled.div`
     height: 60px;
     text-transform: uppercase;
     z-index: 1;
+    background: rgba(0,0,0, 0.6);
 `;
 export const Logo = styled.img`
     margin-left: 100px;

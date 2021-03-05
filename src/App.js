@@ -1,26 +1,34 @@
-
-import AboutMe from "./components/AboutMe";
-import Footer from "./components/Footer";
-import Form from "./components/Form";
-import MasonryGrid from "./components/MasonryGrid";
-import Motto from "./components/Motto";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import { toHome, toVideo, toPricing, toContact } from "./routes";
 import NavBar from "./components/NavBar";
-import ParallaxSection from "./components/ParallaxSection";
-import Showcase from "./components/Showcase";
+import Video from "./components/Video";
+import Pricing from "./components/Pricing";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 
 function App() {
   return (
-    <>
-    <NavBar />
-    <Showcase />
-    <Motto />
-    <MasonryGrid />
-    <AboutMe />
-    <ParallaxSection />
-    <Form />
-    <Footer />
-    </>
+    <HashRouter>
+      <NavBar />
+      <Switch>
+        <Route path={toHome()}>
+          <Home />
+        </Route>
+        <Route path={toVideo()}>
+          <Video />
+        </Route>
+        <Route path={toPricing()}>
+          <Pricing />
+        </Route>
+        <Route path={toContact()}>
+          <Contact />
+        </Route>
+        <Route>
+          <Redirect to={toHome()} />
+        </Route>
+      </Switch>
+    </HashRouter>
   );
 }
 

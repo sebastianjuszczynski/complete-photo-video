@@ -1,13 +1,14 @@
-import React from 'react'
-import { NavList, NavItem, NavLink } from './styled';
+import React from 'react';
+import { toHome, toVideo, toPricing, toContact } from "../../routes";
+import { NavList, NavItem, StyledNavLink } from './styled';
 
 const Navigation = () => {
     return (
         <NavList>
-            <NavItem><NavLink href="#">Home</NavLink></NavItem>
-            <NavItem><NavLink href="#">Video</NavLink></NavItem>
-            <NavItem><NavLink href="#">Pricing</NavLink></NavItem>
-            <NavItem><NavLink href="#">Contact</NavLink></NavItem>
+            <NavItem><StyledNavLink to={toHome()}>Home</StyledNavLink></NavItem>
+            <NavItem><StyledNavLink to={toVideo()}>Video</StyledNavLink></NavItem>
+            <NavItem><StyledNavLink to={toPricing()}>Pricing</StyledNavLink></NavItem>
+            <NavItem><StyledNavLink to={toContact()}>Contact</StyledNavLink></NavItem>
         </NavList>
     )
 }

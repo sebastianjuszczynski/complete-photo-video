@@ -12,7 +12,7 @@ export const NavigationContainer = styled.div`
     height: 60px;
     text-transform: uppercase;
     z-index: 1;
-    background: rgba(0,0,0, 0.6);
+    background: ${({location}) => location === '/home' ? "rgba(0,0,0, 0.6)" : "black"};
 `;
 export const Logo = styled.img`
     margin-left: 100px;

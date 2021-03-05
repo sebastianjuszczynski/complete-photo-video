@@ -1,15 +1,17 @@
 import React from 'react'
 import Navigation from '../Navigation';
+import { withRouter } from "react-router-dom";
 import { NavigationContainer, Logo } from "./styled";
 import LogoImg from "../../assets/logo.png"
 
-const NavBar = () => {
+const NavBar = (props) => {
     return (
-        <NavigationContainer>
+        <NavigationContainer location={props.location.pathname}>
+            {console.log(props)}
             <Logo src={LogoImg}></Logo>
             <Navigation />
         </NavigationContainer>
     )
 }
 
-export default NavBar;
+export default withRouter(NavBar);

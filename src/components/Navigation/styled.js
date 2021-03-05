@@ -9,6 +9,7 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
     padding: 0 5px;
 `;
-export const NavLink = styled.li`
-
+export const NavLink = styled.a`
+    text-decoration: none;
+    color: white;
 `;
